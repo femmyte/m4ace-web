@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FiArrowRight } from "react-icons/fi";
 
 const Header = () => {
   return (
     <div className="w-screen bg-[#FBE6CC99] h-max flex flex-col md:flex-row justify-between md:px-[4rem] px-3 py-[80px]">
       <div className="flex-1 mt-[20px]">
         <button className="w-max md:w-[358px] h-[50px] rounded-[8px] border-2 border-[#F9D5AACC] py-[13px] px-[10px] bg-[#F9D5AACC] ml-[90px] md:ml-[160px] mb-[-80px] shadow  ">
-          You can support M4ace
+          <div className="flex items-center justify-center gap-x-3">
+            <span>You can support M4ace</span> <FiArrowRight size={18} />
+          </div>
         </button>
         <div className="relative">
           <img

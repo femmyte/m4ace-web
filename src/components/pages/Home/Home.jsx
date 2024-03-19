@@ -3,6 +3,7 @@ import Header from "./Header";
 import Info from "./Info";
 import FAQ from "./FAQ";
 import Animation from "@/components/common/Animation";
+import Footer from "@/components/common/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
       </Animation>
       <Animation style="fade-right" placement="center-center">
         <FAQ />
+      </Animation>
+      <Animation style="fade-left" placement="center-center">
+        <Footer />
       </Animation>
     </div>
   );
