@@ -25,10 +25,13 @@ const Nav = ({ path }) => {
     <nav
       className={`z-[30] border-b h-[84px] flex items-center relative bg-white ${
         menu ? "opacity-3" : ""
-      }  bg-white font-source font-[600]`}
+      }  bg-white font-source font-[600] px-[20px] md:px-[100px]`}
+      style={{
+        boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.1)",
+      }}
     >
       <div
-        className={`${styles.maxWidth} md:py-3 text-black h-[80px] md:h-[60px] w-screen md:flex md:items-center text-[20px] justify-between`}
+        className={` md:py-3 text-black h-[80px] md:h-[60px] w-screen md:flex md:items-center text-[20px] justify-between`}
       >
         <div className="flex justify-between items-center h-full cursor-pointer mx-3">
           <Link
@@ -95,7 +98,7 @@ const Nav = ({ path }) => {
               </Link>
             </li>
           </ul>
-          <div className="md:ml-[60px] lg:ml-[80px] flex flex-col md:flex-row md:justify-center md:items-center md:w-full  gap-x-[48px] gap-y-[20px] md:gap-y-0">
+          <div className="md:ml-[60px] lg:ml-[80px] flex flex-col md:flex-row md:justify-center md:items-center md:w-full  md:gap-x-[48px] gap-y-[20px] md:gap-y-0">
             <Link
               href="/signup"
               className=" text-white bg-primary w-[150px] text-center font-source rounded-lg  hover:bg-primaryYellow hover:animate-pulse ease-out duration-300 py-[5px] px-[10px]"

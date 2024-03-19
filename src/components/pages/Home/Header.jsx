@@ -4,22 +4,22 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-screen h-[649px] bg-[#FBE6CC99] flex justify-between px-[4rem] py-[80px]">
+    <div className="w-screen md:h-[649px] bg-[#FBE6CC99] h-max flex flex-col md:flex-row justify-between md:px-[4rem] px-3 py-[80px]">
       <div className="flex-1 mt-[20px]">
-        <button className="w-[358px] h-[50px] rounded-[8px] border border-[#F9D5AACC] py-[13px] px-[10px] bg-[#F9D5AACC] ml-[160px] mb-[-80px] shadow">
+        <button className="w-max md:w-[358px] h-[50px] rounded-[8px] border-2 border-[#F9D5AACC] py-[13px] px-[10px] bg-[#F9D5AACC] ml-[90px] md:ml-[160px] mb-[-80px] shadow  ">
           You can support M4ace
         </button>
         <div className="relative">
           <img
             src="/images/elevate.svg"
             alt="elevate"
-            className="absolute top-[-30px]"
+            className="absolute top-[-30px] w-[80px] md:w-max"
           />
-          <div className="ml-[100px] mt-[20px]">
-            <h2 className="font-[500] text-[60px] leading-[84px] text-[#222057] mt-[0px]">
+          <div className="pl-[50px] md:pl-0 md:ml-[100px] mt-[10px] md:mt-[20px]">
+            <h2 className="font-[500] text-[30px] md:text-[60px] leading-[48px] md:leading-[84px] text-[#222057] mt-[0px]">
               Elevate Your Skills, Transform Your Future
             </h2>
-            <p className="font-[500] leading-7 text-[#1E1E1E] text-[18px] mt-[20px] w-[443px]">
+            <p className="font-[500] leading-7 text-[#1E1E1E] text-[18px] mt-[20px] w-full md:w-[443px]">
               Embark on Your Tech Journey: Register for our curated FREE
               training courses and get the right Mentorship, Tools and Content.
             </p>
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 grid grid-cols-2 ">
+      <div className="flex-1 grid grid-cols-2 mt-[30px] md:mt-0">
         <Image
           src={"/images/hero-man.svg"}
           alt="hero man"
@@ -48,7 +48,7 @@ const Header = () => {
           alt="hero man"
           height={423}
           width={348}
-          className="mt-[150px] ml-[-40px]"
+          className="md:mt-[150px] md:ml-[-40px]"
         ></Image>
       </div>
     </div>
