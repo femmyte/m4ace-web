@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#F1F0FF] pt-[30px] px-6 md:px-[120px] flex justify-between">
+    <div className="bg-[#F1F0FF] pt-[30px] pb-[30px] md:pb-0 px-6 md:px-[120px] flex flex-col-reverse md:flex-row md:justify-between items-center md:items-stretch">
       <Animation style="fade-left" placement="center-center">
         <div className="flex items-start">
           <Image
@@ -12,6 +12,7 @@ const About = () => {
             alt="star"
             width={34}
             height={40}
+            className="hidden md:block"
           />
           <div className="border-2 border-primary py-[10px] px-[24px] rounded-[24px] w-[303px] mt-[50px]">
             <h3 className="font-[500] text-[24px] leading-[33.6px] text-[#222057]">
@@ -31,7 +32,7 @@ const About = () => {
         style="fade-top"
         placement="center-center"
       > */}
-      <div className="flex items-end mb-[50px]">
+      <div className="md:flex items-end mb-[50px] hidden">
         <Image
           src={"/images/starpurple.png"}
           alt="star"
@@ -58,11 +59,12 @@ const About = () => {
             alt="star"
             width={34}
             height={40}
+            className="hidden md:block"
           />
         </div>
       </Animation>
       <Animation style="fade-left" placement="center-center">
-        <div className="flex flex-col mt-[50px]">
+        <div className="flex flex-col md:mt-[50px]">
           <h1 className="font-[700] text-[30px] leading-[42px] text-[#222057] text-center">
             What keeps us <span className="text-primary">going</span>
           </h1>
@@ -71,7 +73,7 @@ const About = () => {
             alt="star"
             width={34}
             height={40}
-            className="w-[461.7px] h-[270px] ml-[-50px]"
+            className="w-4/5 md:w-[461.7px] h-[270px] md:ml-[-50px] hidden md:block"
           />
         </div>
       </Animation>

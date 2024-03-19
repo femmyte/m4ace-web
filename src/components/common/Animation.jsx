@@ -7,7 +7,7 @@ import ScrollTrigger from "react-scroll-trigger";
 const Animation = ({ children, style, placement }) => {
   const [counterOn, setCounterOn] = useState(false);
   // if(style === 'flip')
-  console.log(style, placement);
+  // console.log(style, placement);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
