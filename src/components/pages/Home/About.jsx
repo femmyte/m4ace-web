@@ -19,10 +19,9 @@ const About = () => {
               Our Vision
             </h3>
             <p className="font-[400] text-[16px] leading-[24px] text-black">
-              Learning is a wonderful experience, and learning from the best
-              makes everything ten times easier. The Internship mentors and lead
-              instructors are all here to make your Internship experience
-              unforgettable.
+              We envision a future where every aspiring tech professional is
+              equipped with the knowledge, skills, and confidence to thrive in
+              the dynamic landscape of technology.
             </p>
           </div>
         </div>
@@ -45,13 +44,12 @@ const About = () => {
         <div className="flex items-start">
           <div className="border-2 border-primary py-[10px] px-[24px] rounded-[24px] w-[303px] mt-[50px]">
             <h3 className="font-[500] text-[24px] leading-[33.6px] text-[#222057]">
-              Our Vision
+              Our MIssion
             </h3>
             <p className="font-[400] text-[16px] leading-[24px] text-black">
-              Learning is a wonderful experience, and learning from the best
-              makes everything ten times easier. The Internship mentors and lead
-              instructors are all here to make your Internship experience
-              unforgettable.
+              Our mission is to empower aspiring tech professionals by providing
+              mentorship and guidance to kickstart their careers in the dynamic
+              world of technology.
             </p>
           </div>
           <Image
