@@ -39,7 +39,7 @@ const Nav = ({ path }) => {
             href="/"
           >
             <Image
-              src="/images/logo.png"
+              src="/images/logo.svg"
               width={140}
               height={90}
               className=""

@@ -10,13 +10,13 @@ const Footer = () => {
             <img src="/images/logo-footer.svg" alt="m4ace logo footer" />
           </div>
           <div className="">
-            <p className="text-[16px] leading-[24px] mt-[8px] font-[400]">
+            <p className="text-[16px] leading-[24px] mt-[8px] font-[400] text-center md:text-left">
               team@m4ace.com
             </p>
-            <p className="text-[16px] leading-[24px] font-[400] my-[5px]">
+            <p className="text-[16px] leading-[24px] font-[400] my-[5px] text-center md:text-left">
               +234-908-989-3934
             </p>
-            <p className="text-[16px] leading-[24px] font-[400] md:w-[220px]">
+            <p className="text-[16px] leading-[24px] font-[400] md:w-[220px] text-center md:text-left">
               +234-813-160-9892
             </p>
             <div className="flex items-center gap-x-4 mt-[10px]">
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center mb-[30px] md:mb-0">
+        <div className="text-center md:text-left mb-[30px] md:mb-0">
           <h1 className="text-[20px] font-[500] leading-[30px]">Our Mission</h1>
           <p className="text-[16px] leading-[24px] font-[400] mt-[15px] md:w-[220px] text-center md:text-left">
             Our goal is to empower aspiring tech professionals with cutting-edge
@@ -55,11 +55,11 @@ const Footer = () => {
             digital age.
           </p>
         </div>
-        <div className="text-center mb-[30px] md:mb-0">
+        <div className="text-center md:text-left mb-[30px] md:mb-0">
           <h1 className="text-[20px] font-[500] leading-[30px]">
             Our Policies
           </h1>
-          <ul className="text-center md:text-left">
+          <ul className="text-center  md:text-left">
             <li className="text-[16px] leading-[24px] font-[400] mt-[15px]">
               Terms of Use
             </li>
@@ -68,9 +68,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="text-center">
+        <div className="text-center md:text-left">
           <h1 className="text-[20px] font-[500] leading-[30px]">Our Program</h1>
-          <ul className="text-center md:text-left">
+          <ul className="text-center  md:text-left">
             <li className="text-[16px] leading-[24px] font-[400] mt-[15px]">
               Software Development
             </li>
@@ -78,7 +78,7 @@ const Footer = () => {
               Cloud Computing
             </li>
             <li className="text-[16px] leading-[24px] font-[400] mt-[15px]">
-              Brand Design
+              Brand Identity Design
             </li>
             <li className="text-[16px] leading-[24px] font-[400] mt-[15px]">
               Product Design
