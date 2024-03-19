@@ -7,7 +7,7 @@ const Footer = () => {
       <section className="grid grid-cols-1 md:grid-cols-4 justify-between w-full">
         <div className="flex flex-col justify-center items-center mb-[30px] md:mb-0">
           <div className="">
-            <img src="/images/logo-footer.svg" alt="logo footer" />
+            <img src="/images/logo-footer.svg" alt="m4ace logo footer" />
           </div>
           <div className="">
             <p className="text-[16px] leading-[24px] mt-[8px] font-[400]">

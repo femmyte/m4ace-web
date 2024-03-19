@@ -43,7 +43,7 @@ const Nav = ({ path }) => {
               width={140}
               height={90}
               className=""
-              alt="logo1"
+              alt="m4ace logo"
             />
           </Link>
           <FcMenu

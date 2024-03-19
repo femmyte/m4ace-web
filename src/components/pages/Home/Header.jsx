@@ -19,8 +19,15 @@ const Header = () => {
             className="absolute top-[-30px] w-[80px] md:w-max"
           />
           <div className="pl-[50px] md:pl-0 md:ml-[100px] mt-[10px] md:mt-[20px]">
-            <h2 className="font-[500] text-[30px] md:text-[60px] leading-[48px] md:leading-[84px] text-[#222057] mt-[0px]">
-              Elevate Your Skills, Transform Your Future
+            <h2 className="font-[500] text-[30px] md:text-[60px] leading-[48px] md:leading-[84px] text-[#222057] mt-[0px] inline-block">
+              Elevate Your Skills, Transform Your Future{" "}
+              <Image
+                src={"/images/hero-circle.svg"}
+                alt="hero circle"
+                height={46}
+                width={46}
+                className="inline-block"
+              />
             </h2>
             <p className="font-[500] leading-7 text-[#1E1E1E] text-[18px] mt-[20px] w-full md:w-[443px]">
               Embark on Your Tech Journey: Register for our curated FREE

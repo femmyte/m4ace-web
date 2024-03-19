@@ -17,6 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="keywords"
+          content="mentorship, tech transitioning, m4ace, cloudcomputing"
+        />
+        <link rel="icon" href="favicon.ico" />
+      </head>
       <body className={rubik.className}>
         <Nav />
         {children}
