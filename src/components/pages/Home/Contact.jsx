@@ -37,14 +37,14 @@ const Contact = () => {
     <section className="bg-[#FDF0E0] px-4 md:px-[240px] py-[40px] flex flex-col md:flex-row md:justify-between gap-x-[50px]">
       <Animation style="fade-right" placement="center-center">
         <div className="w-full md:w-[390px]">
-          <h1 className="font-[700] text-[30px] leading-[42px] text-[#222057]">
+          <h1 className="font-[700] text-[24px] md:text-[30px] leading-[42px] text-[#222057]">
             You want to <span className="text-primary">Converse?</span>
           </h1>
           <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
             If you wish to make inquiries or contact us, please use the provided
             form. We guarantee a response within 12 hours or less
           </p>
-          <div className="mt-[20px] flex items-center gap-x-3">
+          <div className="mt-[20px] block md:flex items-center gap-x-3">
             <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
               +234-908-989-3934
             </p>
