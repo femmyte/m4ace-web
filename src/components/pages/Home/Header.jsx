@@ -26,7 +26,7 @@ const Header = () => {
                 alt="hero circle"
                 height={46}
                 width={46}
-                className="inline-block"
+                className="inline-block animate-bounce"
               />
             </h2>
             <p className="font-[500] leading-7 text-[#1E1E1E] text-[18px] mt-[20px] w-full md:w-[443px]">

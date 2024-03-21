@@ -37,17 +37,22 @@ const Contact = () => {
     <section className="bg-[#FDF0E0] px-4 md:px-[240px] py-[40px] flex flex-col md:flex-row md:justify-between gap-x-[50px]">
       <Animation style="fade-right" placement="center-center">
         <div className="w-full md:w-[390px]">
-          <h1 className="font-[700] text-[24px] md:text-[30px] leading-[42px] text-[#222057]">
+          <h1 className="font-[700] text-[24px] md:text-[30px] leading-[42px] text-[#222057] text-center mb-4">
             You want to <span className="text-primary">Converse?</span>
           </h1>
           <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
             If you wish to make inquiries or contact us, please use the provided
             form. We guarantee a response within 12 hours or less
           </p>
-          <div className="mt-[20px] block md:flex items-center gap-x-3">
+          <div className="mt-[20px] flex flex-col md:flex-row justify-center md:justify-start items-center gap-x-3">
             <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
               +234-908-989-3934
             </p>
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-primary/85"></span>
+            </span>
+            {/* <div className="h-3 w-3 bg-primary rounded-full"></div> */}
             <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
               team@m4ace.com
             </p>
@@ -58,6 +63,7 @@ const Contact = () => {
               alt="star"
               width={34}
               height={40}
+              className=" animate-pulse"
             />
           </div>
           <div className="hidden md:flex justify-start items-end mt-[100px]">
@@ -66,6 +72,7 @@ const Contact = () => {
               alt="star"
               width={89}
               height={78}
+              className=" animate-bounce"
             />
           </div>
         </div>

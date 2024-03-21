@@ -12,7 +12,7 @@ const About = () => {
             alt="star"
             width={34}
             height={40}
-            className="hidden md:block"
+            className="hidden md:block animate-pulse"
           />
           <div className="border-2 border-primary py-[10px] px-[24px] rounded-[24px] w-[303px] mt-[50px]">
             <h3 className="font-[500] text-[24px] leading-[33.6px] text-[#222057]">
@@ -37,6 +37,7 @@ const About = () => {
           alt="star"
           width={34}
           height={40}
+          className=" animate-pulse"
         />
       </div>
       {/* </Animation> */}
@@ -57,7 +58,7 @@ const About = () => {
             alt="star"
             width={34}
             height={40}
-            className="hidden md:block"
+            className="hidden md:block animate-pulse"
           />
         </div>
       </Animation>
