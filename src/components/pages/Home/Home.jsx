@@ -6,6 +6,7 @@ import Animation from "@/components/common/Animation";
 import Footer from "@/components/common/Footer";
 import About from "./About";
 import Partners from "./Partners";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -16,6 +17,9 @@ const Home = () => {
       </Animation>
       {/* <Animation style="fade-left" placement="center-center"> */}
       <About />
+      {/* </Animation> */}
+      {/* <Animation style="fade-left" placement="center-center"> */}
+      <Contact />
       {/* </Animation> */}
       <Animation style="fade-right" placement="center-center">
         <FAQ />
