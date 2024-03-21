@@ -40,7 +40,11 @@ const Header = () => {
               >
                 Apply Now
               </Link>
-              <img src="/images/arrow.svg" alt="arrow" className="" />
+              <img
+                src="/images/arrow.svg"
+                alt="arrow"
+                className="animate-bounce"
+              />
             </div>
           </div>
         </div>
