@@ -35,7 +35,7 @@ const Header = () => {
             </p>
             <div className="flex mt-[30px] items-center">
               <Link
-                href="/signup"
+                href="/registration"
                 className=" text-white bg-primary  text-center font-source rounded-lg  hover:animate-pulse ease-out duration-300 h-[50px] w-[150px] flex justify-center items-center"
               >
                 Apply Now

@@ -27,9 +27,9 @@ const Home = () => {
       <Animation style="fade-left" placement="center-center">
         <Partners />
       </Animation>
-      <Animation style="fade-right" placement="center-center">
+      {/* <Animation style="fade-right" placement="center-center">
         <Footer />
-      </Animation>
+      </Animation> */}
     </div>
   );
 };

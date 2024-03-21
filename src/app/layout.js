@@ -1,6 +1,7 @@
 import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/common/Nav";
+import Footer from "@/components/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubik = Rubik({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
       </body>
+      <Footer />
     </html>
   );
 }
