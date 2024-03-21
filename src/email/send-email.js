@@ -38,7 +38,7 @@ export const SendEmail = ({ name, email, message }) => {
   );
 };
 
-export default SendDidEmail;
+export default SendEmail;
 
 const main = {
   backgroundColor: "#f6f9fc",
