@@ -26,26 +26,29 @@ const Registration = () => {
   //     };
   //   }, []);
   return (
-    <div
-      style={{
-        width: "100%",
-        // maxWidth: "640px",
-        margin: "auto",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd8Kn2mScBaXK7qdknPUzStp4MztDMat_PBqEordgOzWpAvWw/viewform?embedded=true"
-        width={iframeWidth}
-        height={iframeHeight}
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+    <>
+      <div className="h-[85px]"></div>
+      <div
+        style={{
+          width: "100%",
+          // maxWidth: "640px",
+          margin: "auto",
+          height: "150vh",
+          overflow: "hidden",
+        }}
       >
-        Loading…
-      </iframe>
-    </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd8Kn2mScBaXK7qdknPUzStp4MztDMat_PBqEordgOzWpAvWw/viewform?embedded=true"
+          width={iframeWidth}
+          height={iframeHeight}
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+    </>
   );
 };
 

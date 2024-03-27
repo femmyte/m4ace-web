@@ -12,6 +12,7 @@ const styles = {
 
 const Nav = ({ path }) => {
   const currentPath = useRouter().pathname;
+  console.log(path);
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     if (menu) {
@@ -23,7 +24,7 @@ const Nav = ({ path }) => {
 
   return (
     <nav
-      className={`z-[30] border-b h-[84px] flex items-center relative bg-white ${
+      className={`z-[30] border-b h-[84px] fixed max-w-[100vw] flex items-center  bg-white ${
         menu ? "opacity-3" : ""
       }  bg-white font-source font-[600] px-[20px] md:px-[100px]`}
       style={{
@@ -64,11 +65,12 @@ const Nav = ({ path }) => {
             <li className=" ">
               <Link
                 className={`${
-                  path === "/"
+                  path === "/programs"
                     ? "text-[#050F1F] border-2 py-1 px-1 rounded"
                     : ""
                 } font-[400] text-[18px] duration-500 w-max block`}
-                href="/"
+                href="#programs"
+                onClick={handleMenu}
               >
                 Our Programs
               </Link>
@@ -76,11 +78,12 @@ const Nav = ({ path }) => {
             <li className="">
               <Link
                 className={`${
-                  path === "/"
+                  currentPath === "/about"
                     ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded"
                     : ""
                 } font-[400] text-[18px]  duration-500 font-source`}
-                href="/"
+                href="/#about"
+                onClick={handleMenu}
               >
                 About
               </Link>
@@ -88,11 +91,12 @@ const Nav = ({ path }) => {
             <li className="">
               <Link
                 className={`${
-                  path === "/"
+                  path === "faq"
                     ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded"
                     : ""
                 } font-[400] text-[18px]  duration-500 font-source`}
-                href="/"
+                href="/#faq"
+                onClick={handleMenu}
               >
                 FAQ
               </Link>
@@ -100,8 +104,9 @@ const Nav = ({ path }) => {
           </ul>
           <div className="md:ml-[60px] lg:ml-[80px] flex flex-col md:flex-row md:justify-center md:items-center md:w-full  md:gap-x-[48px] gap-y-[20px] md:gap-y-0">
             <Link
-              href="/signup"
+              href="/registration"
               className=" text-white bg-primary w-[150px] text-center font-source rounded-lg  hover:bg-primaryYellow hover:animate-pulse ease-out duration-300 py-[5px] px-[10px]"
+              onClick={handleMenu}
             >
               Apply Now
             </Link>

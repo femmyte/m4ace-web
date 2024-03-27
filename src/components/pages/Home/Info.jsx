@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = ({ icon, title, content }) => {
   return (
-    <div className="w-[287px]">
+    <div id="about" className="w-[287px]">
       <Image
         src={`/images/icons/${icon}.svg`}
         alt={title}
