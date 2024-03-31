@@ -19,7 +19,7 @@ const Animation = ({ children, style, placement }) => {
       <div
         data-aos={style}
         anchorPlacement="bottom"
-        // data-aos-anchor-placement={placement ? placement : ''}
+        // data-aos-anchor-placement={placement ? placement : ""}
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
         data-aos-offset="0"
