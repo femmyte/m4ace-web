@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { Link as LinkTo } from "react-scroll";
 import { FcMenu } from "react-icons/fc";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -61,48 +62,80 @@ const Nav = ({ path }) => {
               : "hidden"
           }  md:flex  md:items-center md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 font-normal text-[20px] basis-80`}
         >
-          <ul className="md:flex md:justify-between md:items-center md:gap-x-[35px] lg:gap-x-[60px]">
+          <ul className="flex flex-col md:flex-row gap-y-7 items-center h-1/3 justify-center md:justify-between md:items-center md:gap-x-[35px] lg:gap-x-[60px]">
             <li className=" ">
               <Link
+                className={`${
+                  path === "/"
+                    ? "text-[#050F1F] border-2 py-1 px-1 rounded"
+                    : ""
+                } font-[400] text-[18px] duration-500 w-max block`}
+                href="/"
+                onClick={handleMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className=" ">
+              <LinkTo
+                to="programs"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={800}
+                className="font-[400] text-[18px] duration-500 w-max block cursor-pointer"
+                onClick={handleMenu}
+              >
+                Our Programs
+              </LinkTo>
+              {/* <Link
                 className={`${
                   path === "/programs"
                     ? "text-[#050F1F] border-2 py-1 px-1 rounded"
                     : ""
                 } font-[400] text-[18px] duration-500 w-max block`}
-                href="#programs"
+                href="/#programs"
                 onClick={handleMenu}
               >
                 Our Programs
-              </Link>
+              </Link> */}
             </li>
             <li className="">
-              <Link
+              <LinkTo
                 className={`${
                   currentPath === "/about"
-                    ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded"
-                    : ""
+                    ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded cursor-pointer"
+                    : "cursor-pointer"
                 } font-[400] text-[18px]  duration-500 font-source`}
-                href="/#about"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={800}
                 onClick={handleMenu}
               >
                 About
-              </Link>
+              </LinkTo>
             </li>
             <li className="">
-              <Link
+              <LinkTo
                 className={`${
                   path === "faq"
                     ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded"
                     : ""
-                } font-[400] text-[18px]  duration-500 font-source`}
-                href="/#faq"
+                } font-[400] text-[18px]  duration-500 font-source cursor-pointer`}
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={800}
                 onClick={handleMenu}
               >
                 FAQ
-              </Link>
+              </LinkTo>
             </li>
           </ul>
-          <div className="md:ml-[60px] lg:ml-[80px] flex flex-col md:flex-row md:justify-center md:items-center md:w-full  md:gap-x-[48px] gap-y-[20px] md:gap-y-0">
+          <div className="md:ml-[60px] lg:ml-[80px] flex flex-col md:flex-row items-center  md:justify-center md:items-center md:w-full  md:gap-x-[48px] gap-y-[20px] md:gap-y-0">
             <Link
               href="/registration"
               className=" text-white bg-primary w-[150px] text-center font-source rounded-lg  hover:bg-primaryYellow hover:animate-pulse ease-out duration-300 py-[5px] px-[10px]"

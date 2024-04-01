@@ -45,10 +45,10 @@ const Item = ({ title, handleOpen, opened, content }) => {
   return (
     <div className="p-5 bg-cream mt-[10px]" onClick={handleOpen}>
       <div className="flex justify-between items-center w-full">
-        <p className="font-[500] text-[20px] leading-[30px] text-[#222057]">
+        <p className="font-[500] text-[20px] leading-[30px] text-[#222057] w-4/5">
           {title}
         </p>
-        <IoMdAdd size={17} />
+        <IoMdAdd size={37} />
       </div>
       {opened && (
         <div className="mt-3">

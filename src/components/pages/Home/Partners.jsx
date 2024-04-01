@@ -8,12 +8,18 @@ const Partners = () => {
         Our Partners and Sponsors
       </h3>
       <div className="mt-[20px] flex gap-x-[2rem] justify-center items-center ">
-        <Image
-          src={"/images/partners/payconnect.png"}
-          alt="mypayconnect"
-          height={70}
-          width={233}
-        />
+        <a
+          href="https://play.google.com/store/apps/details?id=mypayconnect.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src={"/images/partners/payconnect.png"}
+            alt="mypayconnect"
+            height={70}
+            width={233}
+          />
+        </a>
         <Image
           src={"/images/partners/jobberman.png"}
           alt="mypayconnect"

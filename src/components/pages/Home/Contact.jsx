@@ -44,7 +44,7 @@ const Contact = () => {
             If you wish to make inquiries or contact us, please use the provided
             form. We guarantee a response within 12 hours or less
           </p>
-          <div className="mt-[20px] flex flex-col md:flex-row justify-center md:justify-start items-center gap-x-3">
+          {/* <div className="mt-[20px] flex flex-col md:flex-row justify-center md:justify-start items-center gap-x-3">
             <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
               +234-908-989-3934
             </p>
@@ -52,10 +52,43 @@ const Contact = () => {
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-primary/85"></span>
             </span>
-            {/* <div className="h-3 w-3 bg-primary rounded-full"></div> */}
             <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
               team@m4ace.com
             </p>
+          </div> */}
+          <div className="mt-[20px] ">
+            <div className="flex gap-[15px]">
+              <Image
+                src={"/images/icons/call.svg"}
+                alt="star"
+                width={64}
+                height={64}
+              />
+              <div className="">
+                <h4 className="font-[500] text-[20px] leading-[30px] text-[#1e1e1e]">
+                  Contact Number
+                </h4>
+                <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
+                  <a href="tel:+234813160982">+234-908-989-3934</a>
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-[15px] mt-[20px]">
+              <Image
+                src={"/images/icons/email.svg"}
+                alt="star"
+                width={64}
+                height={64}
+              />
+              <div className="">
+                <h4 className="font-[500] text-[20px] leading-[30px] text-[#1e1e1e]">
+                  Our Email
+                </h4>
+                <p className="font-[400] text-[18px] leading-[27px] text-[#1E1E1E]">
+                  <a href="mailto:team@m4ace.com">team@m4ace.com</a>
+                </p>
+              </div>
+            </div>
           </div>
           <div className="flex justify-end items-start mt-[20px]">
             <Image

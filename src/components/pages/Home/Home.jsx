@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import About from "./About";
 import Partners from "./Partners";
 import Contact from "./Contact";
+import Program from "../Program";
 
 const Home = () => {
   return (
@@ -15,8 +16,10 @@ const Home = () => {
       <Animation style="fade-right" placement="center-center">
         <Info />
       </Animation>
-      {/* <Animation style="fade-left" placement="center-center"> */}
+
       <About />
+      <Program />
+      {/* <Animation style="fade-left" placement="center-center"> */}
       {/* </Animation> */}
       {/* <Animation style="fade-left" placement="center-center"> */}
       <Contact />
