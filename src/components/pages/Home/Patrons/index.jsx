@@ -3,7 +3,7 @@ import PatronCard from "./PatronCard";
 
 const Patron = () => {
   return (
-    <div className="w-full md:px-[120px] px-4 py-[30px] h-screen">
+    <div className="w-full md:px-[120px] px-4 py-[30px] md:h-screen">
       <div className="">
         <h3 className="font-[700] leading-[42px] text-[30px] text-[#222057] text-center">
           Meet our <span className="text-primary">Patrons</span>
@@ -12,7 +12,7 @@ const Patron = () => {
           Our Patrons are made up of tech expert from various field
         </p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row items-center md:justify-between gap-y-8 h-full">
         <PatronCard
           color={"black"}
           img={"m4ace-patron-jonathan-ayodele.png"}

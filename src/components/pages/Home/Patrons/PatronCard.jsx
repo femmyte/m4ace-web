@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const PatronCard = ({ color, name, img, title, x, linkedin, facebook }) => {
   return (
-    <section className="w-[270.15px] relative h-max">
+    <section className="w-[270.15px] relative min-h-[420px]">
       <div
         className={`absolute top-[16px] rounded-[16px] w-[252px] border
          ${color ? `bg-${color}` : "bg-[#DC761A]"}  min-h-[400px] h-full`}
