@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const PatronCard = ({ color, name, img, title, x, linkedin, facebook }) => {
   return (
-    <section className="w-[270.15px] relative min-h-[420px]">
+    <section className="w-[270.15px] relative min-h-[400px]">
       <div
-        className={`absolute top-[16px] rounded-[16px] w-[252px] border
+        className={`absolute top-[16px] rounded-[16px] w-[252px] border border-black
          ${color ? `bg-${color}` : "bg-[#DC761A]"}  min-h-[400px] h-full`}
       ></div>
-      <div className="absolute left-[13.15px] p-[16px] rounded-[16px] w-[257px] border bg-[rgb(251,230,204)]">
+      <div className="absolute left-[13.15px] p-[16px] rounded-[16px] w-[257px] border border-black bg-[rgb(251,230,204)]">
         <Image
           src={`/images/${img}`}
           width={225}
@@ -30,12 +30,12 @@ const PatronCard = ({ color, name, img, title, x, linkedin, facebook }) => {
             </p>
           </div>
           <div className="flex items-center gap-[3px]">
-            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] p-[7px] flex items-center justify-center bg-white">
+            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] border-[#B5A8A8] p-[7px] flex items-center justify-center bg-white">
               <a href={x} target="_blank" rel="noopener noreferrer">
                 <FaXTwitter size={16} />
               </a>
             </div>
-            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] p-[7px] flex items-center justify-center bg-white">
+            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] border-[#B5A8A8] p-[7px] flex items-center justify-center bg-white">
               <a
                 href={facebook ? facebook : "#"}
                 target="_blank"
@@ -44,7 +44,7 @@ const PatronCard = ({ color, name, img, title, x, linkedin, facebook }) => {
                 <FaFacebookF size={16} />
               </a>
             </div>
-            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] p-[7px] flex items-center justify-center bg-white">
+            <div className="w-[30px] h-[30px] rounded-[8px] border-[0.5px] border-[#B5A8A8] p-[7px] flex items-center justify-center bg-white">
               <a
                 href={linkedin ? linkedin : "#"}
                 target="_blank"

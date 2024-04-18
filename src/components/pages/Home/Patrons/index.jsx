@@ -45,7 +45,7 @@ const Patron = () => {
             name={"Oluwarotimi Owolabi "}
             title={"DevOps at Access Bank Plc"}
             linkedin={"https://www.linkedin.com/in/timibreez/"}
-            x={"https://x.com/Jonat_ayo"}
+            x={"#"}
             facebook={""}
           />
         </Animation>
@@ -56,7 +56,7 @@ const Patron = () => {
             name={"Adigun Rasheed "}
             title={"Website Developer"}
             linkedin={"https://www.linkedin.com/in/akotechonline/"}
-            x={"https://x.com/Jonat_ayo"}
+            x={"#"}
             facebook={""}
           />
         </Animation>
