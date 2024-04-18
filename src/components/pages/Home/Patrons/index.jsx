@@ -4,7 +4,10 @@ import Animation from "@/components/common/Animation";
 
 const Patron = () => {
   return (
-    <div className="w-full md:px-[120px] px-4 py-[50px] md:h-screen">
+    <div
+      className="w-full md:px-[120px] px-4 py-[50px] md:h-screen"
+      id="patrons"
+    >
       <div className="">
         <h3 className="font-[700] leading-[42px] text-[30px] text-[#222057] text-center">
           Meet our <span className="text-primary">Patrons</span>

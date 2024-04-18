@@ -13,7 +13,7 @@ const styles = {
 
 const Nav = ({ path }) => {
   const currentPath = useRouter().pathname;
-  console.log(path);
+  // console.log(path);
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     if (menu) {
@@ -62,7 +62,7 @@ const Nav = ({ path }) => {
               : "hidden"
           }  md:flex  md:items-center md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 font-normal text-[20px] basis-80`}
         >
-          <ul className="flex flex-col md:flex-row gap-y-7 items-center h-1/3 justify-center md:justify-between md:items-center md:gap-x-[35px] lg:gap-x-[60px]">
+          <ul className="flex flex-col md:flex-row gap-y-7 items-center h-1/2 justify-center md:justify-between md:items-center md:gap-x-[35px] lg:gap-x-[60px]">
             <li className=" ">
               <Link
                 className={`${
@@ -75,6 +75,23 @@ const Nav = ({ path }) => {
               >
                 Home
               </Link>
+            </li>
+            <li className="">
+              <LinkTo
+                className={`${
+                  currentPath === "/about"
+                    ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded cursor-pointer"
+                    : "cursor-pointer"
+                } font-[400] text-[18px]  duration-500 font-source`}
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={800}
+                onClick={handleMenu}
+              >
+                About
+              </LinkTo>
             </li>
             <li className=" ">
               <LinkTo
@@ -103,18 +120,18 @@ const Nav = ({ path }) => {
             <li className="">
               <LinkTo
                 className={`${
-                  currentPath === "/about"
+                  currentPath === "patrons"
                     ? "text-[#050F1F] border-2 py-1 border-[#006F36] px-1 rounded cursor-pointer"
                     : "cursor-pointer"
                 } font-[400] text-[18px]  duration-500 font-source`}
-                to="about"
+                to="patrons"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={800}
                 onClick={handleMenu}
               >
-                About
+                Patrons
               </LinkTo>
             </li>
             <li className="">
