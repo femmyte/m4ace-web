@@ -8,6 +8,7 @@ import About from "./About";
 import Partners from "./Partners";
 import Contact from "./Contact";
 import Program from "../Program";
+import Patron from "./Patrons";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       {/* <Animation style="fade-left" placement="center-center"> */}
       <Contact />
       {/* </Animation> */}
+      <Patron />
       <Animation style="fade-right" placement="center-center">
         <FAQ />
       </Animation>
