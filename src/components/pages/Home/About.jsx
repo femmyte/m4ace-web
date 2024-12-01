@@ -1,83 +1,45 @@
-import Animation from "@/components/common/Animation";
-import Image from "next/image";
-import React from "react";
+import Animation from '@/components/common/Animation';
+import Image from 'next/image';
+import React from 'react';
 
 const About = () => {
-  return (
-    <div className="bg-[#F1F0FF] pt-[30px] pb-[30px] md:pb-0 px-6 md:px-[120px] flex flex-col-reverse md:flex-row md:justify-between items-center md:items-stretch">
-      <Animation style="fade-left" placement="center-center">
-        <div className="flex items-start">
-          <Image
-            src={"/images/starblue.png"}
-            alt="star"
-            width={34}
-            height={40}
-            className="hidden md:block animate-pulse"
-          />
-          <div className="border-2 border-primary py-[10px] px-[24px] rounded-[24px] w-[303px] mt-[50px]">
-            <h3 className="font-[500] text-[24px] leading-[33.6px] text-[#222057]">
-              Our Vision
-            </h3>
-            <p className="font-[400] text-[16px] leading-[24px] text-black">
-              We envision a future where every aspiring tech professional is
-              equipped with the knowledge, skills, and confidence to thrive in
-              the dynamic landscape of technology.
-            </p>
-          </div>
-        </div>
-      </Animation>
-      {/* <Animation
-        className="flex items-end"
-        style="fade-top"
-        placement="center-center"
-      > */}
-      <div className="md:flex items-end mb-[50px] hidden">
-        <Image
-          src={"/images/starpurple.png"}
-          alt="star"
-          width={34}
-          height={40}
-          className=" animate-pulse"
-        />
-      </div>
-      {/* </Animation> */}
-      <Animation style="fade-right" placement="center-center">
-        <div className="flex items-start">
-          <div className="border-2 border-primary py-[10px] px-[24px] rounded-[24px] w-[303px] mt-[50px]">
-            <h3 className="font-[500] text-[24px] leading-[33.6px] text-[#222057]">
-              Our MIssion
-            </h3>
-            <p className="font-[400] text-[16px] leading-[24px] text-black">
-              Our mission is to empower aspiring tech professionals by providing
-              mentorship and guidance to kickstart their careers in the dynamic
-              world of technology.
-            </p>
-          </div>
-          <Image
-            src={"/images/starblue.png"}
-            alt="star"
-            width={34}
-            height={40}
-            className="hidden md:block animate-pulse"
-          />
-        </div>
-      </Animation>
-      <Animation style="fade-left" placement="center-center">
-        <div className="flex flex-col md:mt-[50px]">
-          <h1 className="font-[700] text-[30px] leading-[42px] text-[#222057] text-center">
-            What keeps us <span className="text-primary">going</span>
-          </h1>
-          <Image
-            src={"/images/angle.svg"}
-            alt="star"
-            width={34}
-            height={40}
-            className="w-4/5 md:w-[461.7px] h-[270px] md:ml-[-50px] hidden md:block"
-          />
-        </div>
-      </Animation>
-    </div>
-  );
+	return (
+		<div className='bg-secondary md:h-[41.6875rem] w-screen relative mt-6 md:mt-[10rem] md:mb-[14rem] px-4 py-6 md:py-0 md:px-0'>
+			<div className='flex justify-center'>
+				<img
+					src={'/images-v2/about1.png'}
+					alt='hero aws logo'
+					className='border-[1rem] rounded-[2.5rem] border-primary mx-auto md:absolute md:top-[-13rem] hidden md:block'
+				/>
+			</div>
+
+			{/* <div className='mt-[24rem]'> */}
+			<div className='flex flex-col md:flex-row gap-y-4 md:gap-12 justify- py-10 px-4 md:px-12 w-full md:w-[71.5rem] bg-white mx-auto  md:mt-[24rem] border-[6px] border-secondary rounded-[1.5rem]'>
+				<img
+					src={'/images-v2/about2.png'}
+					alt='hero aws logo'
+					className='border-[6px] rounded-[2.5rem] border-primary mx-auto '
+				/>
+				<div className='py-[1.53rem] '>
+					<h3 className='text-secondary text-[2rem] md:text-[2.25rem] font-[700] leading-[2.15rem] md:leading-[3.15rem] mb-4 md:mb-0 text-center md:text-left'>
+						About Mentorship for Acceleration
+					</h3>
+					<p className='text-secondary text-[1.125rem] font-[400] leading-[1.687rem] text-justify'>
+						At M4Ace, we provide aspiring tech enthusiasts with the
+						skills and resources they need to thrive in
+						today&lsquo;s fast-evolving digital world. We are
+						offering free training and data subscriptions to ensure
+						every student can fully participate. We equip our
+						learners with industry-standard skills in areas such as
+						Writing, Coding, Design, Cybersecurity, DevOps, and
+						more, empowering them to build innovative projects that
+						solve real-world challenges.
+					</p>
+				</div>
+			</div>
+			{/* </div> */}
+		</div>
+	);
 };
 
 export default About;

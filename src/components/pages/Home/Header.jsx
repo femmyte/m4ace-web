@@ -1,72 +1,120 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 
+const Button = ({ text }) => {
+	return (
+		// <Link href='/'>
+		<button className='hover:bg-primary rounded-3xl md:rounded-[2rem] border-1 border-[#DCDCDC] py-[0.625rem] px-[1.875rem] text-black hover:text-white shadow min-w-fit'>
+			{text}
+		</button>
+		// </Link>
+	);
+};
 const Header = () => {
-  return (
-    <div className="w-screen bg-[#FBE6CC99] h-max flex flex-col md:flex-row justify-between md:px-[4rem] px-3 py-[80px]">
-      <div className="flex-1 mt-[20px]">
-        <button className="w-max md:w-[358px] h-[50px] rounded-[8px] border-2 border-[#F9D5AACC] py-[13px] px-[10px] bg-[#F9D5AACC] ml-[90px] md:ml-[160px] mb-[-80px] shadow  ">
-          <div className="flex items-center justify-center gap-x-3">
-            <span>You can support M4ace</span> <FiArrowRight size={18} />
-          </div>
-        </button>
-        <div className="relative">
-          <img
-            src="/images/elevate.svg"
-            alt="elevate"
-            className="absolute top-[-30px] w-[80px] md:w-max"
-          />
-          <div className="pl-[50px] md:pl-0 md:ml-[100px] mt-[10px] md:mt-[20px]">
-            <h2 className="font-[500] text-[30px] md:text-[60px] leading-[48px] md:leading-[84px] text-[#222057] mt-[0px] inline-block">
-              Elevate Your Skills, Transform Your Future{" "}
-              <Image
-                src={"/images/hero-circle.svg"}
-                alt="hero circle"
-                height={46}
-                width={46}
-                className="inline-block animate-bounce"
-              />
-            </h2>
-            <p className="font-[500] leading-7 text-[#1E1E1E] text-[18px] mt-[20px] w-full md:w-[443px]">
-              Embark on Your Tech Journey: Register for our curated FREE
-              training courses and get the right Mentorship, Tools and Content.
-            </p>
-            <div className="flex mt-[30px] items-center">
-              <Link
-                href="/registration"
-                className=" text-white bg-primary  text-center font-source rounded-lg  hover:animate-pulse ease-out duration-300 h-[50px] w-[150px] flex justify-center items-center"
-              >
-                Apply Now
-              </Link>
-              <img
-                src="/images/arrow.svg"
-                alt="arrow"
-                className="animate-bounce"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex-1 grid grid-cols-2 mt-[30px] md:mt-0">
-        <Image
-          src={"/images/hero-man.svg"}
-          alt="hero man"
-          height={445}
-          width={342}
-          className=""
-        ></Image>
-        <Image
-          src={"/images/hero-girl.svg"}
-          alt="hero man"
-          height={423}
-          width={348}
-          className="md:mt-[150px] md:ml-[-40px]"
-        ></Image>
-      </div>
-    </div>
-  );
+	return (
+		<div className='w-screen bg-white min-h-screen px-6 md:px-[4rem] pt-[83px] md:py-[80px]'>
+			<div className='flex flex-col items-center justify-center w-screen mt-[20px]'>
+				<Image
+					src={'/images-v2/icons/aws.svg'}
+					alt='hero aws logo'
+					height={64}
+					width={105}
+					className='inline-block animate-bounce'
+				/>
+				<button
+					className='w-max md:w-[358px] h-[50px] rounded-[0.75rem] hover:bg-cream border-2 border-primary py-[13px] px-[10px] shadow'
+					style={{
+						boxShadow: '0px 4px 2px 0px rgba(0, 0, 0, 0.10);',
+					}}
+				>
+					Hey, Our Application is open now
+				</button>
+			</div>
+			<div className='flex my-5 md:my-0 justify-between px-4 md:px-[16.6rem]'>
+				<Image
+					src={'/images-v2/icons/code.svg'}
+					alt='hero aws logo'
+					height={64}
+					width={105}
+					className='inline-block animate-pulse'
+				/>
+				<Image
+					src={'/images-v2/icons/ai.svg'}
+					alt='hero aws logo'
+					height={64}
+					width={105}
+					className='inline-block animate-pulse'
+				/>
+			</div>
+			<div className='md:mt-[-3rem]'>
+				<h1 className='text-[#222057] font-[600] text-[2.75rem] md:text-[3.75rem] leading-[3.4rem] md:leading-[5.25rem] text-center '>
+					<span className='text-primary '>Empowering </span>
+					Tomorrow&apos;s
+				</h1>
+				<h1 className='text-[#222057] font-[600] text-[2.75rem] md:text-[3.75rem] leading-[3.4rem] md:leading-[5.25rem] text-center'>
+					Skill Enthusiasts
+				</h1>
+			</div>
+			<div className=''>
+				<p className='mt-[0.81rem] text-center md:w-[32.25rem] mx-auto text-[#222057] text-base font-[500] leading-6 '>
+					Begin your journey with M4ACE Tech Skills Boot Camp. Thrive
+					in this evolving landscape with our FREE boot camp.
+				</p>
+			</div>
+			<div className='flex justify-between mt-5 md:mt-0 h-[14rem]'>
+				<Image
+					src={'/images-v2/icons/figma.svg'}
+					alt='hero aws logo'
+					height={64}
+					width={105}
+					className='self-end inline-block animate-pulse'
+				/>
+				<button
+					className='py-4 px-3 w-full md:px-10 rounded-[1rem] bg-primary font-[500] text-2xl leading-8 text-white self-center'
+					style={{
+						boxShadow: '0px 4px 2px 0px rgba(0, 0, 0, 0.10);',
+					}}
+				>
+					Apply Now
+				</button>
+				<Image
+					src={'/images-v2/icons/react.svg'}
+					alt='hero aws logo'
+					height={64}
+					width={105}
+					className='self-start inline-block animate-spin'
+				/>
+			</div>
+			<div className='flex items-center gap-8 mt-[2rem] md:mt-0 md:my-[2.06rem] overflow-scroll md:overscroll-none'>
+				<Button text='UI/UX Design' />
+				<Button text='Cloud computig' />
+
+				<Button text='Front End Development' />
+				<Button text='Back End Development' />
+				<Button text='Cloud Computing' />
+				<Button text='Content Writing' />
+				<Button text='Brand Identity' />
+			</div>
+			{/* <div className='flex-1 grid grid-cols-2 mt-[30px] md:mt-0'>
+				<Image
+					src={'/images/hero-man.svg'}
+					alt='hero man'
+					height={445}
+					width={342}
+					className=''
+				></Image>
+				<Image
+					src={'/images/hero-girl.svg'}
+					alt='hero man'
+					height={423}
+					width={348}
+					className='md:mt-[150px] md:ml-[-40px]'
+				></Image>
+      </div> */}
+		</div>
+	);
 };
 
 export default Header;
